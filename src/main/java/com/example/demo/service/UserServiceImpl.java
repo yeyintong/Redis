@@ -27,7 +27,6 @@ public class UserServiceImpl {
         return userList;
     }
 
-
     //@CachePut(value = "selectAll", key = "'userList'")
     public int save(User user) {
         int rows = userMapper.insert(user);
